@@ -58,11 +58,13 @@ def reduce_to_all_true(source_array)
   end
 end 
 
-def reduce_to_total(source_array, starting_point = 0)
+def reduce_to_any_true(source_array)
   index = 0 
   while index < source_array.length do 
-    starting_point += source_array[index]
+    if source_array[index]
+      return true 
+    end
     index += 1 
   end
-  starting_point
+  return false 
 end 
