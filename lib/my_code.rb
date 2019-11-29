@@ -1,5 +1,5 @@
 # My Code here....
-def map_to_negative(source_array)
+def map_to_negativize(source_array)
   index = 0
   new_array = []
   while index < source_array.length do 
